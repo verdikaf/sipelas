@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">sipelas</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="signup">Daftar</string>
+    <string name="id">Nomor ID</string>
+    <string name="nama">Nama</string>
+    <string name="email">Email</string>
+    <string name="telp">Nomor Telepon</string>
+    <string name="status">Status</string>
+    <string name="registrasi">Registrasi</string>
+    <string name="password">Password</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="data_user">Data User</string>
+    <string name="pinjam">Peminjaman</string>
+    <string name="profil">Profil</string>
+    <string name="data_jadwal">Data Jadwal</string>
+    <string name="data_pinjam">Data Pinjam</string>
+    <string name="kelas">Kelas</string>
+    <string name="mata_kuliah">Mata Kuliah</string>
+    <string name="tanggal">Tanggal</string>
+    <string name="alasan">Alasan</string>
+    <string name="jam">Jam Pinjam - Selesai</string>
+    <string name="jam_pinjam">Jam Pinjam</string>
+    <string name="jam_selesai">Jam Selesai</string>
+    <string name="ruang">Ruangan</string>
+</resources>

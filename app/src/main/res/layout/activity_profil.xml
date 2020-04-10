@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profil">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_title"
+            android:text="@string/profil"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_marginTop="100dp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_id"
+            android:text="@string/id"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_id"
+            android:hint="@string/id"
+            android:inputType="number"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_nama"
+            android:text="@string/nama"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_nama"
+            android:hint="@string/nama"
+            android:inputType="text"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_telp"
+            android:text="@string/telp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_telp"
+            android:hint="@string/telp"
+            android:inputType="phone"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_email"
+            android:text="@string/email"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_email"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_password"
+            android:text="@string/password"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_password"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_status"
+            android:text="@string/status"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_status"
+            android:hint="@string/status"
+            android:inputType="text"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp" />
+
+    </LinearLayout>
+
+</ScrollView>
