@@ -130,6 +130,15 @@
             android:textSize="20sp"
             android:layout_marginTop="5dp" />
 
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_logout"
+            android:onClick="bt_logout"
+            android:text="@string/logout"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="50dp"/>
+
     </LinearLayout>
 
 </ScrollView>

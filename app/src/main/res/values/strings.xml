@@ -10,7 +10,6 @@
     <string name="telp">Nomor Telepon</string>
     <string name="status">Status</string>
     <string name="registrasi">Registrasi</string>
-    <string name="password">Password</string>
     <string name="dashboard">Dashboard</string>
     <string name="data_user">Data User</string>
     <string name="pinjam">Peminjaman</string>
@@ -25,4 +24,6 @@
     <string name="jam_pinjam">Jam Pinjam</string>
     <string name="jam_selesai">Jam Selesai</string>
     <string name="ruang">Ruangan</string>
+    <string name="uid">UID</string>
+    <string name="logout">Logout</string>
 </resources>

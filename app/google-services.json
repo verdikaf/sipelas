@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "847578713059",
+    "firebase_url": "https://sipelas-3a9b7.firebaseio.com",
+    "project_id": "sipelas-3a9b7",
+    "storage_bucket": "sipelas-3a9b7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:847578713059:android:a01a60b00cb917e1adeed6",
+        "android_client_info": {
+          "package_name": "com.dika.sipelas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "847578713059-nmbr8lajkfhgs15an4t7bidcv6591hnp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWYnfMAEwKGXhSWTsBzNwQpQcQvuI8KaU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "847578713059-nmbr8lajkfhgs15an4t7bidcv6591hnp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
