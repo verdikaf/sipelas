@@ -17,7 +17,6 @@ class DataJadwal : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_data_jadwal)
 
-        (supportActionBar as ActionBar).setDisplayHomeAsUpEnabled(true)
         (supportActionBar as ActionBar).title = "Data Jadwal"
 
         ref = FirebaseDatabase.getInstance().getReference("pinjam")

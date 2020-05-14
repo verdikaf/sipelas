@@ -5,12 +5,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.ActionBar
+import kotlinx.android.synthetic.main.activity_dashboard_user.*
 
 class DashboardUser : AppCompatActivity() {
 
     private lateinit var bt_profil: Button
     private lateinit var bt_pinjam: Button
     private lateinit var bt_jadwal: Button
+    private lateinit var bt_notif: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,6 +33,11 @@ class DashboardUser : AppCompatActivity() {
         bt_jadwal = findViewById(R.id.bt_jadwal)
         bt_jadwal.setOnClickListener{
             startActivity(Intent(this, DataJadwal::class.java))
+        }
+
+        bt_notif = findViewById(R.id.bt_notif)
+        bt_notif.setOnClickListener {
+            startActivity(Intent(this, Notifikasi::class.java))
         }
     }
 }

@@ -4,17 +4,19 @@ import com.google.firebase.database.Exclude
 import com.google.firebase.database.IgnoreExtraProperties
 
 @IgnoreExtraProperties
-data class Jadwal(
+data class Pinjam(
+    var id: String? = "",
     var alasan: String? = "",
-    var jamAwal: String? = "",
-    var jamAkhir: String? = "",
+    var jAwal: String? = "",
+    var jAkhir: String? = "",
     var kelas: String? = "",
     var keterangan: String? = "",
     var matkul: String? = "",
     var nama: String? = "",
     var ruang: String? = "",
-    var tgl_ruang: String? = "",
-    var tgl: String? = ""
+    var tanggal: String? = "",
+    var hari: String? = "",
+    var status: String? =""
 ) {
 
     @Exclude
@@ -23,13 +25,15 @@ data class Jadwal(
             "nama" to nama,
             "kelas" to kelas,
             "matkul" to matkul,
-            "tgl" to tgl,
-            "jamAwal" to jamAwal,
-            "jamAkhir" to jamAkhir,
+            "tanggal" to tanggal,
+            "jAwal" to jAwal,
+            "jAkhir" to jAkhir,
             "ruang" to ruang,
             "alasan" to alasan,
             "keterangan" to keterangan,
-            "tgl_ruang" to tgl_ruang
+            "hari" to hari,
+            "id" to id,
+            "status" to status
         )
     }
 

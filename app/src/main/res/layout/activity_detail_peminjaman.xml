@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FormPeminjaman">
+    tools:context=".DetailPeminjaman">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,7 +16,7 @@
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:id="@+id/tv_title"
-            android:text="@string/pinjam"
+            android:text="@string/detail_pinjam"
             android:textStyle="bold"
             android:textSize="30sp"
             android:layout_marginTop="50dp"
@@ -31,12 +31,10 @@
             android:textStyle="bold"
             android:layout_marginTop="50dp" />
 
-        <EditText
+        <TextView
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:id="@+id/et_id"
-            android:hint="@string/id"
-            android:inputType="number"
             android:textSize="20sp"
             android:layout_marginTop="5dp" />
 
@@ -49,12 +47,10 @@
             android:textStyle="bold"
             android:layout_marginTop="10dp" />
 
-        <EditText
+        <TextView
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:id="@+id/et_nama"
-            android:hint="@string/nama"
-            android:inputType="text"
             android:textSize="20sp"
             android:layout_marginTop="5dp" />
 
@@ -67,12 +63,10 @@
             android:textStyle="bold"
             android:layout_marginTop="10dp" />
 
-        <EditText
+        <TextView
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:id="@+id/et_kelas"
-            android:hint="@string/kelas"
-            android:inputType="text"
             android:textSize="20sp"
             android:layout_marginTop="5dp" />
 
@@ -85,12 +79,11 @@
             android:textStyle="bold"
             android:layout_marginTop="10dp" />
 
-        <Spinner
+        <TextView
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:id="@+id/sp_matkul"
-            android:hint="@string/mata_kuliah"
-            android:entries="@array/matkul"
+            android:id="@+id/et_matkul"
+            android:textSize="20sp"
             android:layout_marginTop="5dp" />
 
         <TextView
@@ -102,11 +95,11 @@
             android:textStyle="bold"
             android:layout_marginTop="10dp" />
 
-        <Button
+        <TextView
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:id="@+id/bt_tanggal"
-            android:hint="@string/tanggal"
+            android:id="@+id/et_tanggal"
+            android:textSize="20sp"
             android:layout_marginTop="5dp" />
 
         <LinearLayout
@@ -128,12 +121,11 @@
                     android:textStyle="bold"
                     android:layout_marginTop="10dp" />
 
-                <Spinner
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/sp_jamAwal"
-                    android:hint="@string/jam_pinjam"
-                    android:entries="@array/jam"
+                    android:id="@+id/et_jamAwal"
+                    android:textSize="20sp"
                     android:layout_marginTop="5dp" />
 
             </LinearLayout>
@@ -152,12 +144,11 @@
                     android:textStyle="bold"
                     android:layout_marginTop="10dp" />
 
-                <Spinner
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/sp_jamAkhir"
-                    android:hint="@string/jam_selesai"
-                    android:entries="@array/jam"
+                    android:id="@+id/et_jamAkhir"
+                    android:textSize="20sp"
                     android:layout_marginTop="5dp" />
 
             </LinearLayout>
@@ -173,12 +164,11 @@
             android:textStyle="bold"
             android:layout_marginTop="10dp" />
 
-        <Spinner
+        <TextView
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:id="@+id/sp_ruang"
-            android:hint="@string/ruang"
-            android:entries="@array/ruang"
+            android:id="@+id/et_ruang"
+            android:textSize="20sp"
             android:layout_marginTop="5dp" />
 
         <TextView
@@ -190,17 +180,16 @@
             android:textStyle="bold"
             android:layout_marginTop="10dp" />
 
-        <EditText
+        <TextView
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:id="@+id/et_alasan"
             android:hint="@string/alasan"
-            android:inputType="textMultiLine"
             android:lines="4"
             android:maxLines="10"
             android:minLines="2"
             android:scrollbars="vertical"
-            android:textSize="20sp"
+            android:textSize="14sp"
             android:layout_marginTop="5dp" />
 
         <TextView
@@ -212,20 +201,35 @@
             android:textStyle="bold"
             android:layout_marginTop="10dp" />
 
-        <Spinner
+        <TextView
             android:layout_width="300dp"
             android:layout_height="50dp"
-            android:id="@+id/sp_status_ruang"
-            android:entries="@array/status_ruang"
+            android:id="@+id/et_keterangan"
+            android:textSize="20sp"
             android:layout_marginTop="5dp" />
 
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp">
+
         <Button
-            android:layout_width="300dp"
+            android:layout_width="140dp"
             android:layout_height="wrap_content"
-            android:id="@+id/bt_pinjam"
-            android:text="@string/pinjam"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="30dp"/>
+            android:id="@+id/bt_terima"
+            android:text="@string/terima"
+            android:layout_marginRight="7dp"/>
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_tolak"
+            android:text="@string/tolak"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
 
     </LinearLayout>
 

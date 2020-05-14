@@ -9,9 +9,9 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tv_nama"
+        android:id="@+id/tv_matkul"
         android:layout_marginBottom="10dp"
-        android:text="@string/nama"
+        android:text="@string/mata_kuliah"
         android:textStyle="bold"
         android:textSize="18sp" />
 
