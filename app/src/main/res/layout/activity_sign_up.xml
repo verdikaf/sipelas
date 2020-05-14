@@ -19,7 +19,7 @@
             android:text="@string/id"
             android:textSize="12sp"
             android:textStyle="bold"
-            android:layout_marginTop="100dp" />
+            android:layout_marginTop="30dp" />
 
         <EditText
             android:layout_width="300dp"
@@ -123,7 +123,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/bt_register"
             android:text="@string/registrasi"
-            android:layout_marginTop="30dp" />
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"/>
 
     </LinearLayout>
 

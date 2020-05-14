@@ -26,4 +26,31 @@
     <string name="ruang">Ruangan</string>
     <string name="uid">UID</string>
     <string name="logout">Logout</string>
+
+    <string name="user_item"></string>
+    <string name="keterangan">Keterangan</string>
+    <string name="sks">SKS</string>
+    <string name="cari">Cari</string>
+    <string-array name="status_user">
+        <item>Administrator</item>
+        <item>Mahasiswa</item>
+    </string-array>
+    <string-array name="status_ruang">
+        <item>Tetap</item>
+        <item>Sementara</item>
+    </string-array>
+    <string-array name="hari">
+        <item>Senin</item>
+        <item>Selasa</item>
+        <item>Rabu</item>
+        <item>Kamis</item>
+        <item>Jumat</item>
+    </string-array>
+    <string-array name="ruang">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
 </resources>

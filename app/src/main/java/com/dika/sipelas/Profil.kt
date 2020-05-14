@@ -1,12 +1,11 @@
 package com.dika.sipelas
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.Editable
 import android.view.View
 import android.widget.EditText
-import android.widget.TextView
+import androidx.appcompat.app.ActionBar
+import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -15,20 +14,18 @@ import com.google.firebase.database.ValueEventListener
 
 class Profil : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
-    companion object{
-        const val EXTRA_UID = "extra_uid"
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profil)
+
+        (supportActionBar as ActionBar).title = "Profil"
 
         auth = FirebaseAuth.getInstance()
         val users = auth.currentUser
 
         val et_id : EditText = findViewById(R.id.et_id)
         val et_nama : EditText = findViewById(R.id.et_nama)
-        val et_email : EditText = findViewById(R.id.et_email)
         val et_telp : EditText = findViewById(R.id.et_telp)
         val et_status : EditText = findViewById(R.id.et_status)
 
@@ -57,6 +54,7 @@ class Profil : AppCompatActivity() {
         FirebaseAuth.getInstance().signOut()
 
         val intentLogout = Intent(this@Profil, MainActivity::class.java)
+        intentLogout.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
         startActivity(intentLogout)
     }
 }

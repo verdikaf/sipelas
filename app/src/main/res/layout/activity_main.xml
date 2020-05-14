@@ -40,6 +40,7 @@
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:id="@+id/bt_signup"
+            android:onClick="bt_signup"
             android:text="@string/signup"
             android:layout_marginTop="10dp" />
 

@@ -19,7 +19,7 @@
             android:text="@string/profil"
             android:textStyle="bold"
             android:textSize="30sp"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="50dp"
             android:textAlignment="center" />
 
         <TextView
@@ -73,42 +73,6 @@
             android:id="@+id/et_telp"
             android:hint="@string/telp"
             android:inputType="phone"
-            android:textSize="20sp"
-            android:layout_marginTop="5dp" />
-
-        <TextView
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/tv_email"
-            android:text="@string/email"
-            android:textSize="12sp"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp" />
-
-        <EditText
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/et_email"
-            android:hint="@string/email"
-            android:inputType="textEmailAddress"
-            android:textSize="20sp"
-            android:layout_marginTop="5dp" />
-
-        <TextView
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/tv_password"
-            android:text="@string/password"
-            android:textSize="12sp"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp" />
-
-        <EditText
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/et_password"
-            android:hint="@string/password"
-            android:inputType="textPassword"
             android:textSize="20sp"
             android:layout_marginTop="5dp" />
 

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string-array name="status_user">
-        <item>Administrator</item>
-        <item>Mahasiswa</item>
-    </string-array>
-</resources>

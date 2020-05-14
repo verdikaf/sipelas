@@ -19,7 +19,7 @@
             android:text="@string/pinjam"
             android:textStyle="bold"
             android:textSize="30sp"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="50dp"
             android:textAlignment="center" />
 
         <TextView
@@ -90,6 +90,24 @@
             android:layout_height="wrap_content"
             android:id="@+id/et_matkul"
             android:hint="@string/mata_kuliah"
+            android:inputType="text"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_sks"
+            android:text="@string/sks"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_sks"
+            android:hint="@string/sks"
             android:inputType="text"
             android:textSize="20sp"
             android:layout_marginTop="5dp" />
@@ -197,7 +215,7 @@
         <EditText
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:id="@+id/et_status"
+            android:id="@+id/et_alasan"
             android:hint="@string/alasan"
             android:inputType="textMultiLine"
             android:lines="4"
@@ -206,6 +224,30 @@
             android:scrollbars="vertical"
             android:textSize="20sp"
             android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_keterangan"
+            android:text="@string/keterangan"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp" />
+
+        <Spinner
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:id="@+id/sp_status_ruang"
+            android:entries="@array/status_ruang"
+            android:layout_marginTop="5dp" />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_pinjam"
+            android:text="@string/pinjam"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"/>
 
     </LinearLayout>
 

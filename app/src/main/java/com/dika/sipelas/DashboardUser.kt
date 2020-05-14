@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import androidx.appcompat.app.ActionBar
 
 class DashboardUser : AppCompatActivity() {
 
@@ -15,6 +16,8 @@ class DashboardUser : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard_user)
 
+        (supportActionBar as ActionBar).title = "Dashboard"
+
         bt_profil = findViewById(R.id.bt_profil)
         bt_profil.setOnClickListener{
             startActivity(Intent(this, Profil::class.java))
@@ -25,9 +28,9 @@ class DashboardUser : AppCompatActivity() {
             startActivity(Intent(this, FormPeminjaman::class.java))
         }
 
-//        bt_jadwal = findViewById(R.id.bt_jadwal)
-//        bt_jadwal.setOnClickListener{
-//            startActivity(Intent(this, Profil::class.java))
-//        }
+        bt_jadwal = findViewById(R.id.bt_jadwal)
+        bt_jadwal.setOnClickListener{
+            startActivity(Intent(this, DataJadwal::class.java))
+        }
     }
 }
