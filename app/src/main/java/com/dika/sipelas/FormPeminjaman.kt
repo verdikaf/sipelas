@@ -221,8 +221,9 @@ class FormPeminjaman : AppCompatActivity() {
         val matkul = sp_matkul.getSelectedItem().toString()
         val keterangan = sp_status_ruang.getSelectedItem().toString()
         val alasan = et_alasan.text.toString()
+        val hari = "senin"
 
-        val peminjaman = Peminjaman(id,nama,kelas,tanggal,ruang,jAwal,jAkhir,matkul,alasan, keterangan, "menunggu")
+        val peminjaman = Peminjaman(id,nama,kelas,tanggal,ruang,jAwal,jAkhir,matkul,alasan, keterangan, "menunggu", hari)
 
         ref.child(id).setValue(peminjaman).addOnCompleteListener {
             Toast.makeText(this, "Success",Toast.LENGTH_SHORT).show()

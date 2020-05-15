@@ -9,8 +9,8 @@ import androidx.recyclerview.widget.RecyclerView
 class JadwalAdapter(private val listJadwal: ArrayList<Jadwal>) : RecyclerView.Adapter<JadwalAdapter.ListViewHolder>() {
     inner class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var tvJam: TextView = itemView.findViewById(R.id.tv_jam)
-        var tvMatkul: TextView = itemView.findViewById(R.id.tv_matkul)
-        var tvKelas: TextView = itemView.findViewById(R.id.tv_kelas)
+        var tvHari: TextView = itemView.findViewById(R.id.tv_hari)
+        var tvRuang: TextView = itemView.findViewById(R.id.tv_ruang)
         var tvKet: TextView = itemView.findViewById(R.id.tv_keterangan)
 
     }
@@ -28,9 +28,9 @@ class JadwalAdapter(private val listJadwal: ArrayList<Jadwal>) : RecyclerView.Ad
     override fun onBindViewHolder(holder: JadwalAdapter.ListViewHolder, position: Int) {
         val jadwal = listJadwal[position]
 
-        holder.tvJam.text = jadwal.jamAwal.toString()
-        holder.tvMatkul.text = jadwal.matkul
-        holder.tvKelas.text = jadwal.kelas
+        holder.tvJam.text = jadwal.jam
+        holder.tvHari.text = jadwal.hari
+        holder.tvRuang.text = jadwal.ruang
         holder.tvKet.text = jadwal.keterangan
     }
 }

@@ -5,31 +5,21 @@ import com.google.firebase.database.IgnoreExtraProperties
 
 @IgnoreExtraProperties
 data class Jadwal(
-    var alasan: String? = "",
-    var jamAwal: String? = "",
-    var jamAkhir: String? = "",
-    var kelas: String? = "",
     var keterangan: String? = "",
-    var matkul: String? = "",
-    var nama: String? = "",
+    var hari: String? = "",
     var ruang: String? = "",
-    var tgl_ruang: String? = "",
-    var tgl: String? = ""
+    var jam: String? = "",
+    var hari_ruang: String? = ""
 ) {
 
     @Exclude
     fun toMap(): Map<String, Any?> {
         return mapOf(
-            "nama" to nama,
-            "kelas" to kelas,
-            "matkul" to matkul,
-            "tgl" to tgl,
-            "jamAwal" to jamAwal,
-            "jamAkhir" to jamAkhir,
+            "hari" to hari,
+            "jam" to jam,
             "ruang" to ruang,
-            "alasan" to alasan,
             "keterangan" to keterangan,
-            "tgl_ruang" to tgl_ruang
+            "hari_ruang" to hari_ruang
         )
     }
 

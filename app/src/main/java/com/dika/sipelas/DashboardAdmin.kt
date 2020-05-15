@@ -12,6 +12,7 @@ class DashboardAdmin : AppCompatActivity() {
     private lateinit var bt_pinjam: Button
     private lateinit var bt_jadwal: Button
     private lateinit var bt_user: Button
+    private lateinit var bt_ruang: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,6 +38,11 @@ class DashboardAdmin : AppCompatActivity() {
         bt_jadwal = findViewById(R.id.bt_jadwal)
         bt_jadwal.setOnClickListener{
             startActivity(Intent(this, DataJadwal::class.java))
+        }
+
+        bt_ruang = findViewById(R.id.bt_ruang)
+        bt_ruang.setOnClickListener{
+            startActivity(Intent(this, Ruangan::class.java))
         }
     }
 }

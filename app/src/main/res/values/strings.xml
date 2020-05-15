@@ -35,6 +35,9 @@
     <string name="terima">Terima</string>
     <string name="tolak">Tolak</string>
     <string name="notifikasi">Notifikasi</string>
+    <string name="data_ruang">Data Ruang</string>
+    <string name="hari">Hari</string>
+    <string name="input_ruangan">Input Ruangan</string>
     <string-array name="status_user">
         <item>Administrator</item>
         <item>Mahasiswa</item>
@@ -44,11 +47,11 @@
         <item>Sementara</item>
     </string-array>
     <string-array name="hari">
-        <item>Senin</item>
-        <item>Selasa</item>
-        <item>Rabu</item>
-        <item>Kamis</item>
-        <item>Jumat</item>
+        <item>senin</item>
+        <item>selasa</item>
+        <item>rabu</item>
+        <item>kamis</item>
+        <item>jumat</item>
     </string-array>
     <string-array name="ruang">
         <item>1</item>

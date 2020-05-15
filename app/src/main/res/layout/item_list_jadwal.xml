@@ -48,8 +48,8 @@
             <TextView
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/tv_matkul_title"
-                android:text="@string/mata_kuliah"
+                android:id="@+id/tv_hari_title"
+                android:text="@string/hari"
                 android:textSize="18sp" />
 
             <TextView
@@ -61,8 +61,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/tv_matkul"
-                android:text="@string/mata_kuliah"
+                android:id="@+id/tv_hari"
+                android:text="@string/hari"
                 android:textSize="18sp" />
 
         </LinearLayout>
@@ -76,8 +76,8 @@
             <TextView
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/tv_kelas_title"
-                android:text="@string/kelas"
+                android:id="@+id/tv_ruang_title"
+                android:text="@string/ruang"
                 android:textSize="16sp" />
 
             <TextView
@@ -89,8 +89,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/tv_kelas"
-                android:text="@string/kelas"
+                android:id="@+id/tv_ruang"
+                android:text="@string/ruang"
                 android:textSize="16sp" />
 
         </LinearLayout>

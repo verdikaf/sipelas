@@ -11,6 +11,7 @@ class Peminjaman(
     var matkul: String,
     var alasan: String,
     var keterangan: String,
-    var status: String) {
-    constructor() : this("","", "", "", "", "","","", "", "", "")
+    var status: String,
+    var hari: String) {
+    constructor() : this("","", "", "", "", "","","", "", "", "", "")
 }
