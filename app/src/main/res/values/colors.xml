@@ -3,4 +3,22 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="darkchoco">#3d3d29</color>
+    <color name="grey"> #7a7a52</color>
+
+
+<!--    gradient color-->
+
+    <color name="blue4">#9966ff</color>
+    <color name="blue3">#4d88ff</color>
+    <color name="blue2">#99ccff</color>
+    <color name="blue1">#e6ffff</color>
+    <color name="purple_500">#9c27b0</color>
+    <color name="deep_purple_500">#673ab7</color>
+    <color name="indigo_500">#3f51b5</color>
+    <color name="blue_500">#2196f3</color>
+    <color name="cyan_500">#00bcd4</color>
+    <color name="light_blue_500">#03a9f4</color>
+
 </resources>
