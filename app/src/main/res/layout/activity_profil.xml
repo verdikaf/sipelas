@@ -15,6 +15,7 @@
         android:gravity="center">
 
         <TextView
+            android:textColor="@android:color/black"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:id="@+id/tv_title"
@@ -25,11 +26,12 @@
             android:textAlignment="center" />
 
         <TextView
+            android:textColor="@color/darkchoco"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:id="@+id/tv_id"
             android:text="@string/id"
-            android:textSize="12sp"
+            android:textSize="14sp"
             android:textStyle="bold"
             android:layout_marginTop="50dp" />
 
@@ -43,11 +45,12 @@
             android:layout_marginTop="5dp" />
 
         <TextView
+            android:textColor="@color/darkchoco"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:id="@+id/tv_nama"
             android:text="@string/nama"
-            android:textSize="12sp"
+            android:textSize="14sp"
             android:textStyle="bold"
             android:layout_marginTop="10dp" />
 
@@ -61,11 +64,12 @@
             android:layout_marginTop="5dp" />
 
         <TextView
+            android:textColor="@color/darkchoco"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:id="@+id/tv_telp"
             android:text="@string/telp"
-            android:textSize="12sp"
+            android:textSize="14sp"
             android:textStyle="bold"
             android:layout_marginTop="10dp" />
 
@@ -79,11 +83,12 @@
             android:layout_marginTop="5dp" />
 
         <TextView
+            android:textColor="@color/darkchoco"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:id="@+id/tv_status"
             android:text="@string/status"
-            android:textSize="12sp"
+            android:textSize="14sp"
             android:textStyle="bold"
             android:layout_marginTop="10dp" />
 

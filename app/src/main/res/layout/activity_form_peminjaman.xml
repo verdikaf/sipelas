@@ -104,11 +104,14 @@
             android:layout_marginTop="10dp" />
 
         <Button
+            android:background="@drawable/button1"
+            android:textColor="@color/white"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:id="@+id/bt_tanggal"
+            android:textColorHint="@color/white"
             android:hint="@string/tanggal"
-            android:layout_marginTop="5dp" />
+            android:layout_marginTop="10dp" />
 
         <LinearLayout
             android:layout_width="300dp"
@@ -221,6 +224,8 @@
             android:layout_marginTop="5dp" />
 
         <Button
+            android:background="@drawable/button1"
+            android:textColor="@color/white"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:id="@+id/bt_pinjam"

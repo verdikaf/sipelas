@@ -4,9 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/gradient3"
+    android:layout_marginBottom="10dp"
     android:padding="16dp">
 
     <TextView
+        android:textColor="@android:color/black"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/tv_nama"
@@ -16,6 +20,7 @@
         android:textSize="18sp" />
 
     <TextView
+        android:textColor="@color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/tv_tanggal"
@@ -23,6 +28,7 @@
         android:text="@string/tanggal" />
 
     <TextView
+        android:textColor="@color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/tv_ruang"
@@ -30,6 +36,7 @@
         android:text="@string/ruang" />
 
     <TextView
+        android:textColor="@android:color/holo_red_light"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/tv_status"
