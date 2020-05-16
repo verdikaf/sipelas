@@ -4,8 +4,14 @@
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="white">#FFFFFF</color>
+    <color name="darkchoco">#3d3d29</color>
+    <color name="grey"> #7a7a52</color>
+
 
 <!--    gradient color-->
+
+    <color name="blue4">#9966ff</color>
+    <color name="blue3">#4d88ff</color>
     <color name="blue2">#99ccff</color>
     <color name="blue1">#e6ffff</color>
     <color name="purple_500">#9c27b0</color>
