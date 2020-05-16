@@ -57,29 +57,32 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun updateUI(user: FirebaseUser?) {
+        if (user == null){
+            tv_uid.setText("Error: sign in failed.")
+        } else {
+            tv_uid.setText("user ID: " + user?.uid.toString())
 
-        tv_uid.setText(user?.uid.toString())
+            var user: User? = null  // declare user object outside onCreate Method
 
-        var user: User? = null  // declare user object outside onCreate Method
-
-        var ref = FirebaseDatabase.getInstance().getReference("users").child(FirebaseAuth.getInstance().currentUser!!.uid)
-        // Read from the database
-        val menuListener = object : ValueEventListener {
-            override fun onCancelled(databaseError: DatabaseError) {
-                // handle error
-            }
-            override fun onDataChange(dataSnapshot: DataSnapshot) {
-                user = dataSnapshot.getValue(User::class.java)
-                if (user?.status == "admin"){
-                    val intent = Intent(this@MainActivity, DashboardAdmin::class.java)
-                    startActivity(intent)
-                } else {
-                    val intent = Intent(this@MainActivity, DashboardUser::class.java)
-                    startActivity(intent)
+            var ref = FirebaseDatabase.getInstance().getReference("users").child(FirebaseAuth.getInstance().currentUser!!.uid)
+            // Read from the database
+            val menuListener = object : ValueEventListener {
+                override fun onCancelled(databaseError: DatabaseError) {
+                    // handle error
+                }
+                override fun onDataChange(dataSnapshot: DataSnapshot) {
+                    user = dataSnapshot.getValue(User::class.java)
+                    if (user?.status == "admin"){
+                        val intent = Intent(this@MainActivity, DashboardAdmin::class.java)
+                        startActivity(intent)
+                    } else {
+                        val intent = Intent(this@MainActivity, DashboardUser::class.java)
+                        startActivity(intent)
+                    }
                 }
             }
+            ref.addListenerForSingleValueEvent(menuListener)
         }
-        ref.addListenerForSingleValueEvent(menuListener)
     }
 
     fun bt_login(view: View) {
