@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/gradient1"
     android:layout_height="match_parent"
     tools:context=".Profil">
 
@@ -10,6 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:layout_gravity="center"
         android:gravity="center">
 
         <TextView
@@ -95,6 +97,8 @@
             android:layout_marginTop="5dp" />
 
         <Button
+            android:background="@drawable/button1"
+            android:textColor="@color/white"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:id="@+id/bt_logout"
