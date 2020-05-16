@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">sipelas</string>
+    <string name="app_name">Sipelas</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="login">Login</string>
@@ -39,8 +39,8 @@
     <string name="hari">Hari</string>
     <string name="input_ruangan">Input Ruangan</string>
     <string-array name="status_user">
-        <item>Administrator</item>
-        <item>Mahasiswa</item>
+        <item>admin</item>
+        <item>mahasiswa</item>
     </string-array>
     <string-array name="status_ruang">
         <item>Tetap</item>
