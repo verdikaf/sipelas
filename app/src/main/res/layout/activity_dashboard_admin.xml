@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient1"
     tools:context=".DashboardAdmin">
 
     <LinearLayout
@@ -22,13 +23,16 @@
             android:layout_marginTop="150dp"
             android:textAlignment="center" />
 
+
         <LinearLayout
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="30dp">
+            android:layout_marginTop="60dp">
 
             <Button
+                android:textColor="@color/white"
+                android:background="@drawable/button1"
                 android:layout_width="140dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/bt_user"
@@ -37,6 +41,8 @@
                 android:layout_marginEnd="5dp"/>
 
             <Button
+                android:textColor="@color/white"
+                android:background="@drawable/button1"
                 android:layout_width="140dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/bt_pinjam"
@@ -53,6 +59,8 @@
             android:layout_marginTop="10dp">
 
             <Button
+                android:textColor="@color/white"
+                android:background="@drawable/button1"
                 android:layout_width="140dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/bt_jadwal"
@@ -61,6 +69,8 @@
                 android:layout_marginEnd="5dp"/>
 
             <Button
+                android:textColor="@color/white"
+                android:background="@drawable/button1"
                 android:layout_width="140dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/bt_profil"
@@ -74,10 +84,13 @@
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:gravity="center"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="30dp">
 
             <Button
+                android:textColor="@color/white"
+                android:background="@drawable/button1"
                 android:layout_width="140dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/bt_ruang"
